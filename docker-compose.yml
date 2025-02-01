@@ -1,0 +1,18 @@
+
+# compose v2 verziótól nem kell megadni a version kulcsot!
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile # image építés a dockerfile-ból
+      platforms: 
+        - "linux/amd64"
+        - "linux/arm64"
+        - "windows/amd64"  # Több platform együttes használata
+    image: thomashorvath0416/node-exp  # Az épített image neve
+    container_name: node-test  # A konténer neve
+    ports:
+      - "16008:3000"  # A porttovábbítás (localhost:16008 -> konténer 3000)
+    volumes:
+      - .:/app  # A mappák összekapcsolása (aktuális mappa -> /app a konténerben)

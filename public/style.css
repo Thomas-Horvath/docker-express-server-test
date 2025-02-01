@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #333;
+    color: aliceblue;
+
+    a {
+        color: #f0f0f0;
+        text-decoration: none;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
