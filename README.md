@@ -1,4 +1,6 @@
-# teszt fejlesztői környezet, docker kontérben
+# Teszt fejlesztői környezet kialakítása docker konténerben
+
+## nodejs - Express szerver
 
 1. klónozd ezt a repositorit
 2. futtasd lokálisan az `npm install` parancsot
